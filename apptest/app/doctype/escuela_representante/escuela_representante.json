@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "autoname": "field:cedula",
+ "creation": "2021-09-13 00:53:23.468055",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cedula",
+  "nombres",
+  "apellidos",
+  "fecha_nacimiento",
+  "estado_civil",
+  "telefono",
+  "correo",
+  "trabajo"
+ ],
+ "fields": [
+  {
+   "fieldname": "cedula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "C\u00e9dula",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombres",
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellidos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Apellidos",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado_civil",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Estado Civil",
+   "options": "estado_civil",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono Convencional",
+   "reqd": 1
+  },
+  {
+   "fieldname": "correo",
+   "fieldtype": "Data",
+   "label": "Correo Electr\u00f3nico",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trabajo",
+   "fieldtype": "Data",
+   "label": "Lugar de trabajo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_nacimiento",
+   "fieldtype": "Date",
+   "label": "Fecha Nacimiento",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-13 02:42:14.870616",
+ "modified_by": "Administrator",
+ "module": "app",
+ "name": "escuela_representante",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

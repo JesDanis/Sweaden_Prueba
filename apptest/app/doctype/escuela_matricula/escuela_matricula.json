@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "creation": "2021-09-13 01:10:07.870937",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "representante",
+  "column_break_2",
+  "nombres",
+  "section_break_4",
+  "matricula",
+  "factura",
+  "hijos",
+  "precio",
+  "pagar",
+  "descuento",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "representante",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Representante",
+   "options": "escuela_representante",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "factura",
+   "fieldtype": "Heading",
+   "label": "Factura"
+  },
+  {
+   "fieldname": "hijos",
+   "fieldtype": "Read Only",
+   "label": "N\u00ba Hijos"
+  },
+  {
+   "fieldname": "precio",
+   "fieldtype": "Read Only",
+   "label": "Precio Uni."
+  },
+  {
+   "fieldname": "pagar",
+   "fieldtype": "Read Only",
+   "label": "A Pagar"
+  },
+  {
+   "fieldname": "descuento",
+   "fieldtype": "Read Only",
+   "label": "Descuento"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Read Only",
+   "label": "Total a Pagar"
+  },
+  {
+   "fieldname": "matricula",
+   "fieldtype": "Table",
+   "label": "Matricula",
+   "options": "escuela_detalle"
+  },
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Read Only",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-13 03:09:35.333630",
+ "modified_by": "Administrator",
+ "module": "app",
+ "name": "escuela_matricula",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
